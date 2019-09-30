@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import web
+from web.httpserver import StaticMiddleware
 import model
 import json
 
@@ -36,7 +37,7 @@ class entries:
 app = web.application(urls, globals())
 
 # get the wsgi app from web.py application object
-wsgiapp = app.wsgifunc()
+wsgiapp = app.wsgifunc(StaticMiddleware)
 
 if __name__ == "__main__":
     app.run()
