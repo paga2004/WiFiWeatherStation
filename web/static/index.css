@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     display: grid;
     background-color: cadetblue;
-    font-family: "Arial Black";
+    font-family: "Arial";
 }
 
 .flex-container {
@@ -15,7 +15,7 @@ body, html {
 
 .flex-item {
     color: white;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 2em;
     text-align: center;
 }
