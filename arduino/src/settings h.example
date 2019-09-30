@@ -1,0 +1,8 @@
+//Replace the values with your credentials and rename the file to "settings.h"
+
+char url[] = "http://urlToyourWebServer/api/entry";
+char ssid[] = "yourWiFiName";
+char password[] = "*******"; //Leave this empty if you don't use a password to connect to your WiFi
+
+//Seconds to sleep between sending data
+const int sleepSeconds = 15 * 60;

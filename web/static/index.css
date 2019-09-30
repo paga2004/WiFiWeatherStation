@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    background-color: cadetblue;
+    font-family: "Arial Black";
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#temp {
+    font-size: 5em;
+}
+
+#humidity {
+    font-size: 3em;
+}
+
+#time {
+    font-size: 1em;
+}
