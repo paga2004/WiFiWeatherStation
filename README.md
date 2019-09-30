@@ -4,7 +4,7 @@ A simple IoT weather station built with a wemos d1 mini.
 
 ## Introduction
 
-The wemos d1 mini is connected to a [HYT939](https://www.ist-ag.com/sites/default/files/DHHYT939_E.pdf) humidity and temperature sensor. It will connect to a WiFi network, measure, and send data to the web server every couple minutes. The webserer accepts HTTP POST request on /api/entry in the following format:
+The wemos d1 mini is connected to a [HYT939](https://www.ist-ag.com/sites/default/files/DHHYT939_E.pdf) humidity and temperature sensor. It will connect to a WiFi network, measure, and send data to the web server every couple minutes. The webserver accepts HTTP POST request on /api/entry in the following format:
 
 ```
 temp=xx&humidity=xx
@@ -27,18 +27,18 @@ wemos d1 mini | HYT939
 GND | GND
 D1 | SCL
 D2 | SDA
-D0 -> RST | -
+D0 <-> RST | -
 
 ## Dependecies
 
-Make sure you have python 2.7 and pip installed and install them by running the following command. 
+Make sure you have python2.7 and pip installed and install them by running the following command:
 ```bash
 $ cd web
 $ pip install -r requirements.txt
 ```
 
 
-The sketches have some dependencies.
+The sketches for the microcontroller have some dependencies.
 
 Please install them first:
 
